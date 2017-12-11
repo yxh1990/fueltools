@@ -1,0 +1,11 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: 
+- !ruby/object:RI::AliasName 
+  name: log
+block_params: 
+comment: 
+full_name: Mixlib::Log#add
+is_singleton: false
+name: add
+params: (severity, message = nil, progname = nil, &block)
+visibility: public

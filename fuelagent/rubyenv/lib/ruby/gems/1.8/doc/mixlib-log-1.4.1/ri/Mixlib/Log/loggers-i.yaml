@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: An Array of log devices that will be logged to. Defaults to just the default @logger log device, but you can push to this array to add more devices.
+full_name: Mixlib::Log#loggers
+is_singleton: false
+name: loggers
+params: ()
+visibility: public

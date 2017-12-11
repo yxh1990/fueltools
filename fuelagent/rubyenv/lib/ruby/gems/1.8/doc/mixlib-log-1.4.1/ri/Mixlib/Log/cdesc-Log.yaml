@@ -1,0 +1,49 @@
+--- !ruby/object:RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+constants: 
+- !ruby/object:RI::Constant 
+  comment: 
+  name: LEVELS
+  value: "{ :debug=>Logger::DEBUG, :info=>Logger::INFO, :warn=>Logger::WARN, :error=>Logger::ERROR, :fatal=>Logger::FATAL}.freeze"
+- !ruby/object:RI::Constant 
+  comment: 
+  name: LEVEL_NAMES
+  value: LEVELS.invert.freeze
+- !ruby/object:RI::Constant 
+  comment: 
+  name: VERSION
+  value: "\"1.4.1\""
+full_name: Mixlib::Log
+includes: []
+
+instance_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: "<<"
+- !ruby/object:RI::MethodSummary 
+  name: add
+- !ruby/object:RI::MethodSummary 
+  name: init
+- !ruby/object:RI::MethodSummary 
+  name: level
+- !ruby/object:RI::MethodSummary 
+  name: level=
+- !ruby/object:RI::MethodSummary 
+  name: log
+- !ruby/object:RI::MethodSummary 
+  name: logger
+- !ruby/object:RI::MethodSummary 
+  name: logger=
+- !ruby/object:RI::MethodSummary 
+  name: loggers
+- !ruby/object:RI::MethodSummary 
+  name: method_missing
+- !ruby/object:RI::MethodSummary 
+  name: reset!
+- !ruby/object:RI::MethodSummary 
+  name: use_log_devices
+name: Log
+superclass: 

@@ -1,0 +1,16 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: "Sets the level for the Logger object by symbol. Valid arguments are:"
+- !ruby/struct:SM::Flow::VERB 
+  body: " :debug\n :info\n :warn\n :error\n :fatal\n"
+- !ruby/struct:SM::Flow::P 
+  body: Throws an ArgumentError if you feed it a bogus log level.
+full_name: Mixlib::Log#level=
+is_singleton: false
+name: level=
+params: (new_level)
+visibility: public

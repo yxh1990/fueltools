@@ -1,0 +1,23 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Loads a given ruby file, and runs instance_eval against it in the context of the current object.
+- !ruby/struct:SM::Flow::P 
+  body: Raises an IOError if the file cannot be found, or is not readable.
+- !ruby/struct:SM::Flow::H 
+  level: 3
+  text: Parameters
+- !ruby/object:SM::Flow::LIST 
+  contents: 
+  - !ruby/struct:SM::Flow::LI 
+    label: "<string>:"
+    body: A filename to read from
+  type: :NOTE
+full_name: Mixlib::Config#from_file
+is_singleton: false
+name: from_file
+params: (filename)
+visibility: public

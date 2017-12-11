@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: Mixlib::Log#use_log_devices
+is_singleton: false
+name: use_log_devices
+params: (other)
+visibility: public

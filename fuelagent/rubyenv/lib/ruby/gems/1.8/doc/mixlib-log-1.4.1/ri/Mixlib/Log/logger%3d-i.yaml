@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Sets the log device to <tt>new_log_device</tt>. Any additional loggers that had been added to the <tt>loggers</tt> array will be cleared.
+full_name: Mixlib::Log#logger=
+is_singleton: false
+name: logger=
+params: (new_log_device)
+visibility: public

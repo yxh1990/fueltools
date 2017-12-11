@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Passes any other method calls on directly to the underlying Logger object created with init. If this method gets hit before a call to Mixlib::Logger.init has been made, it will call Mixlib::Logger.init() with no arguments.
+full_name: Mixlib::Log#method_missing
+is_singleton: false
+name: method_missing
+params: (method_symbol, *args, &block)
+visibility: public

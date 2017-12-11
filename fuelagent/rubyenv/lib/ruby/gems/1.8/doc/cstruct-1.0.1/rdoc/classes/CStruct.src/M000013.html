@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <title>union (CStruct)</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <link rel="stylesheet" href="../.././rdoc-style.css" type="text/css" media="screen" />
+</head>
+<body class="standalone-code">
+  <pre><span class="ruby-comment cmt"># File lib/cstruct/cstruct.rb, line 405</span>
+<span class="ruby-keyword kw">def</span> <span class="ruby-constant">CStruct</span>.<span class="ruby-identifier">union</span> <span class="ruby-identifier">symbol</span>,<span class="ruby-operator">&amp;</span><span class="ruby-identifier">block</span>
+        <span class="ruby-identifier">union_super</span>  = <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">ancestors</span>[<span class="ruby-value">1</span>]
+        <span class="ruby-identifier">union_class</span> = <span class="ruby-constant">Class</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">union_super</span>) <span class="ruby-keyword kw">do</span>
+        <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">change_to_union</span> <span class="ruby-comment cmt">#:nodoc:</span>
+            <span class="ruby-ivar">@fields</span>.<span class="ruby-identifier">each_key</span>  { <span class="ruby-operator">|</span><span class="ruby-identifier">symbol</span><span class="ruby-operator">|</span> <span class="ruby-ivar">@fields</span>[<span class="ruby-identifier">symbol</span>].<span class="ruby-identifier">offset</span> = <span class="ruby-value">0</span> }
+
+            <span class="ruby-identifier">max_field_size</span> = <span class="ruby-ivar">@fields</span>.<span class="ruby-identifier">values</span>.<span class="ruby-identifier">inject</span>(<span class="ruby-value">0</span>)<span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">max</span>,<span class="ruby-identifier">field</span><span class="ruby-operator">|</span> 
+              <span class="ruby-identifier">dimension</span> = <span class="ruby-identifier">field</span>.<span class="ruby-identifier">dimension</span>
+              <span class="ruby-identifier">dimension_product</span> = <span class="ruby-value">1</span>
+        <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">dimension</span>.<span class="ruby-identifier">is_a?</span> <span class="ruby-constant">Array</span>
+                <span class="ruby-identifier">dimension_product</span> = <span class="ruby-identifier">dimension</span>.<span class="ruby-identifier">inject</span>(<span class="ruby-value">1</span>){<span class="ruby-operator">|</span><span class="ruby-identifier">m</span>,<span class="ruby-identifier">d</span><span class="ruby-operator">|</span> <span class="ruby-identifier">m</span> <span class="ruby-operator">*=</span> <span class="ruby-identifier">d</span> }
+        <span class="ruby-keyword kw">end</span>       
+              <span class="ruby-identifier">field_size</span> = <span class="ruby-identifier">field</span>.<span class="ruby-identifier">size</span><span class="ruby-operator">*</span> <span class="ruby-identifier">dimension_product</span>
+              <span class="ruby-identifier">max</span> = (<span class="ruby-identifier">field_size</span><span class="ruby-operator">&gt;</span> <span class="ruby-identifier">max</span> <span class="ruby-value">? </span><span class="ruby-identifier">field_size</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">max</span>)
+            <span class="ruby-keyword kw">end</span>
+            <span class="ruby-ivar">@options</span>[<span class="ruby-identifier">:layout_size</span>] = <span class="ruby-identifier">max_field_size</span>
+          <span class="ruby-keyword kw">end</span>
+        <span class="ruby-keyword kw">end</span>    
+    <span class="ruby-identifier">union_class</span>.<span class="ruby-identifier">instance_eval</span>(<span class="ruby-operator">&amp;</span><span class="ruby-identifier">block</span>) 
+    <span class="ruby-identifier">union_class</span>.<span class="ruby-identifier">instance_eval</span>{<span class="ruby-identifier">change_to_union</span>}
+    <span class="ruby-identifier">structfield</span> <span class="ruby-identifier">symbol</span>,<span class="ruby-identifier">union_class</span>,<span class="ruby-identifier">union_class</span>.<span class="ruby-identifier">size</span>
+<span class="ruby-keyword kw">end</span></pre>
+</body>
+</html>

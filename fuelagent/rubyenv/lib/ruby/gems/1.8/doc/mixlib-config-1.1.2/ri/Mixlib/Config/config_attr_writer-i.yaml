@@ -1,0 +1,27 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: metaprogramming to ensure that the slot for method_symbol gets set to value after any other logic is run
+- !ruby/struct:SM::Flow::H 
+  level: 3
+  text: Parameters
+- !ruby/object:SM::Flow::LIST 
+  contents: 
+  - !ruby/struct:SM::Flow::LI 
+    label: "method_symbol<Symbol>:"
+    body: Name of the method (variable setter)
+  - !ruby/struct:SM::Flow::LI 
+    label: "blk<Block>:"
+    body: logic block to run in setting slot method_symbol to value
+  - !ruby/struct:SM::Flow::LI 
+    label: "value<Object>:"
+    body: Value to be set in config hash
+  type: :NOTE
+full_name: Mixlib::Config#config_attr_writer
+is_singleton: false
+name: config_attr_writer
+params: (method_symbol, &blk)
+visibility: public

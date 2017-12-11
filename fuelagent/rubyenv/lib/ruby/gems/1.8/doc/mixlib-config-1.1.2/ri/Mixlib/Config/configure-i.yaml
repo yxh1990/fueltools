@@ -1,0 +1,21 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Pass Mixlib::Config.configure() a block, and it will yield self.configuration.
+- !ruby/struct:SM::Flow::H 
+  level: 3
+  text: Parameters
+- !ruby/object:SM::Flow::LIST 
+  contents: 
+  - !ruby/struct:SM::Flow::LI 
+    label: "<block>:"
+    body: A block that is sent self.configuration as its argument
+  type: :NOTE
+full_name: Mixlib::Config#configure
+is_singleton: false
+name: configure
+params: (&block)
+visibility: public

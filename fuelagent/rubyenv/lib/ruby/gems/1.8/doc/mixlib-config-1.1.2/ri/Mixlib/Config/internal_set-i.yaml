@@ -1,0 +1,24 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Internal dispatch setter, calling either the real defined method or setting the hash value directly
+- !ruby/struct:SM::Flow::H 
+  level: 3
+  text: Parameters
+- !ruby/object:SM::Flow::LIST 
+  contents: 
+  - !ruby/struct:SM::Flow::LI 
+    label: "method_symbol<Symbol>:"
+    body: Name of the method (variable setter)
+  - !ruby/struct:SM::Flow::LI 
+    label: "value<Object>:"
+    body: Value to be set in config hash
+  type: :NOTE
+full_name: Mixlib::Config#internal_set
+is_singleton: false
+name: internal_set
+params: (method_symbol,value)
+visibility: protected

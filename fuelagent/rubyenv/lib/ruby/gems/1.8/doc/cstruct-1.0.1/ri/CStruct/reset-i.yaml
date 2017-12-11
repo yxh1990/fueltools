@@ -1,0 +1,13 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: 
+- !ruby/object:RI::AliasName 
+  name: __reset__
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Fill the date buffer of a CStruct's instance with zero.
+full_name: CStruct#reset
+is_singleton: false
+name: reset
+params: ()
+visibility: public

@@ -1,0 +1,22 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Define a anonymous union field.
+- !ruby/struct:SM::Flow::P 
+  body: "Example: in C:"
+- !ruby/struct:SM::Flow::VERB 
+  body: "  struct U\n  {\n     union{\n       int x;\n       int y;\n     }value; /* values is anonymous union's instance */\n"
+- !ruby/struct:SM::Flow::P 
+  body: "};"
+- !ruby/struct:SM::Flow::P 
+  body: "use CStruct in Ruby:"
+- !ruby/struct:SM::Flow::VERB 
+  body: "  class U &lt; CStruct\n    union:value do\n      int32:x\n      int32:y\n    end\n  end\n"
+full_name: CStruct::union
+is_singleton: true
+name: union
+params: (symbol,&block)
+visibility: public

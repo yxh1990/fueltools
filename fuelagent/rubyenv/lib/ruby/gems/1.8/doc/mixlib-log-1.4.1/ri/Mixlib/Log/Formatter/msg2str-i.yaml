@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Converts some argument to a Logger.severity() call to a string. Regular strings pass through like normal, Exceptions get formatted as &quot;message (class)\nbacktrace&quot;, and other random stuff gets put through &quot;object.inspect&quot;
+full_name: Mixlib::Log::Formatter#msg2str
+is_singleton: false
+name: msg2str
+params: (msg)
+visibility: public

@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: "Prints a log message as '[time] severity: message' if Chef::Log::Formatter.show_time == true. Otherwise, doesn't print the time."
+full_name: Mixlib::Log::Formatter#call
+is_singleton: false
+name: call
+params: (severity, time, progname, msg)
+visibility: public

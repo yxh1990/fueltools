@@ -1,0 +1,16 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Use Mixlib::Log.init when you want to set up the logger manually. Arguments to this method get passed directly to Logger.new, so check out the documentation for the standard Logger class to understand what to do here.
+- !ruby/struct:SM::Flow::P 
+  body: If this method is called with no arguments, it will log to STDOUT at the :warn level.
+- !ruby/struct:SM::Flow::P 
+  body: It also configures the Logger instance it creates to use the custom Mixlib::Log::Formatter class.
+full_name: Mixlib::Log#init
+is_singleton: false
+name: init
+params: (*opts)
+visibility: public

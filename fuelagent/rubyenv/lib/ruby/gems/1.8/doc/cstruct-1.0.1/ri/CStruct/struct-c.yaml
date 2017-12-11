@@ -1,0 +1,22 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Define a anonymous struct field.
+- !ruby/struct:SM::Flow::P 
+  body: "Example:"
+- !ruby/struct:SM::Flow::P 
+  body: "in C:"
+- !ruby/struct:SM::Flow::VERB 
+  body: "  struct Window\n  {\n     int style;\n     struct{\n       int x;\n       int y;\n     }position;\n  };\n"
+- !ruby/struct:SM::Flow::P 
+  body: "use CStruct in Ruby:"
+- !ruby/struct:SM::Flow::VERB 
+  body: "  class Window &lt; CStruct\n    int32:style\n    struct :position do\n      int32:x\n      int32:y\n    end\n  end\n"
+full_name: CStruct::struct
+is_singleton: true
+name: struct
+params: (symbol,&block)
+visibility: public

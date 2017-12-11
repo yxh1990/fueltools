@@ -1,0 +1,33 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Set the value of a configuration option
+- !ruby/struct:SM::Flow::H 
+  level: 3
+  text: Parameters
+- !ruby/object:SM::Flow::LIST 
+  contents: 
+  - !ruby/struct:SM::Flow::LI 
+    label: "config_option<Symbol>:"
+    body: The configuration option to set (within the [])
+  - !ruby/struct:SM::Flow::LI 
+    label: "value:"
+    body: The value for the configuration option
+  type: :NOTE
+- !ruby/struct:SM::Flow::H 
+  level: 3
+  text: Returns
+- !ruby/object:SM::Flow::LIST 
+  contents: 
+  - !ruby/struct:SM::Flow::LI 
+    label: "value:"
+    body: The new value of the configuration option
+  type: :NOTE
+full_name: Mixlib::Config#[]=
+is_singleton: false
+name: "[]="
+params: (config_option, value)
+visibility: public

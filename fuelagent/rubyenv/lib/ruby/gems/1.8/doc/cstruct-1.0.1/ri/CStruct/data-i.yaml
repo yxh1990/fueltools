@@ -1,0 +1,13 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: 
+- !ruby/object:RI::AliasName 
+  name: __data__
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Return the data buffer of a CStruct's instance.
+full_name: CStruct#data
+is_singleton: false
+name: data
+params: ()
+visibility: public

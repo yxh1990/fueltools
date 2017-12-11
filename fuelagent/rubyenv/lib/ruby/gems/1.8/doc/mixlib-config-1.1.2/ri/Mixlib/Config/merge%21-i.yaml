@@ -1,0 +1,26 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Merge an incoming hash with our config options
+- !ruby/struct:SM::Flow::H 
+  level: 3
+  text: Parameters
+- !ruby/object:SM::Flow::LIST 
+  contents: 
+  - !ruby/struct:SM::Flow::LI 
+    label: "hash<Hash>:"
+    body: The incoming hash
+  type: :NOTE
+- !ruby/struct:SM::Flow::H 
+  level: 3
+  text: Returns
+- !ruby/struct:SM::Flow::P 
+  body: result of Hash#merge!
+full_name: Mixlib::Config#merge!
+is_singleton: false
+name: merge!
+params: (hash)
+visibility: public

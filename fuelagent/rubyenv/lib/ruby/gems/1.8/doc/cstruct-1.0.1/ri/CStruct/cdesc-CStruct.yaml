@@ -1,0 +1,81 @@
+--- !ruby/object:RI::ClassDescription 
+attributes: 
+- !ruby/object:RI::Attribute 
+  comment: 
+  name: owner
+  rw: RW
+class_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: align
+- !ruby/object:RI::MethodSummary 
+  name: endian
+- !ruby/object:RI::MethodSummary 
+  name: fields
+- !ruby/object:RI::MethodSummary 
+  name: options
+- !ruby/object:RI::MethodSummary 
+  name: size
+- !ruby/object:RI::MethodSummary 
+  name: struct
+- !ruby/object:RI::MethodSummary 
+  name: union
+comment: 
+- !ruby/struct:SM::Flow::H 
+  level: 3
+  text: Description
+- !ruby/struct:SM::Flow::P 
+  body: CStruct is a simulation of the C language's struct. Its main purpose is to manipulate binary-data conveniently in Ruby.
+- !ruby/struct:SM::Flow::H 
+  level: 3
+  text: Supported primitive types in CStruct
+- !ruby/object:SM::Flow::LIST 
+  contents: 
+  - !ruby/struct:SM::Flow::LI 
+    label: "*"
+    body: "signed types: char,int8,int16,int32,int64,float,double"
+  - !ruby/struct:SM::Flow::LI 
+    label: "*"
+    body: "unsigned types: uchar,uint8,uint16,uint32,uint64"
+  type: :BULLET
+- !ruby/struct:SM::Flow::H 
+  level: 3
+  text: More infomantion
+- !ruby/object:SM::Flow::LIST 
+  contents: 
+  - !ruby/struct:SM::Flow::LI 
+    label: "*"
+    body: "source: http://github.com/skandhas/cstruct"
+  - !ruby/struct:SM::Flow::LI 
+    label: "*"
+    body: "document: http://cstruct.rubyforge.org/documents.html"
+  - !ruby/struct:SM::Flow::LI 
+    label: "*"
+    body: "examples: http://cstruct.rubyforge.org/examples.html"
+  type: :BULLET
+constants: 
+- !ruby/object:RI::Constant 
+  comment: 
+  - !ruby/struct:SM::Flow::P 
+    body: version
+  name: VERSION
+  value: "\"1.0.1\""
+full_name: CStruct
+includes: []
+
+instance_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: "<<"
+- !ruby/object:RI::MethodSummary 
+  name: __data__
+- !ruby/object:RI::MethodSummary 
+  name: __data__=
+- !ruby/object:RI::MethodSummary 
+  name: __reset__
+- !ruby/object:RI::MethodSummary 
+  name: data
+- !ruby/object:RI::MethodSummary 
+  name: data=
+- !ruby/object:RI::MethodSummary 
+  name: reset
+name: CStruct
+superclass: Object

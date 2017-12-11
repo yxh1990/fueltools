@@ -1,0 +1,13 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: 
+- !ruby/object:RI::AliasName 
+  name: __data__=
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Assign to CStruct's instance.
+full_name: CStruct#data=
+is_singleton: false
+name: data=
+params: (bindata)
+visibility: public

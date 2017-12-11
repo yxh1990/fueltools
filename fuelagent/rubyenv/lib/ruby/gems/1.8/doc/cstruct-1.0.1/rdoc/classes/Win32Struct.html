@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Class: Win32Struct</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <link rel="stylesheet" href=".././rdoc-style.css" type="text/css" media="screen" />
+  <script type="text/javascript">
+  // <![CDATA[
+
+  function popupCode( url ) {
+    window.open(url, "Code", "resizable=yes,scrollbars=yes,toolbar=no,status=no,height=150,width=400")
+  }
+
+  function toggleCode( id ) {
+    if ( document.getElementById )
+      elem = document.getElementById( id );
+    else if ( document.all )
+      elem = eval( "document.all." + id );
+    else
+      return false;
+
+    elemStyle = elem.style;
+    
+    if ( elemStyle.display != "block" ) {
+      elemStyle.display = "block"
+    } else {
+      elemStyle.display = "none"
+    }
+
+    return true;
+  }
+  
+  // Make codeblocks hidden by default
+  document.writeln( "<style type=\"text/css\">div.method-source-code { display: none }</style>" )
+  
+  // ]]>
+  </script>
+
+</head>
+<body>
+
+
+
+    <div id="classHeader">
+        <table class="header-table">
+        <tr class="top-aligned-row">
+          <td><strong>Class</strong></td>
+          <td class="class-name-in-header">Win32Struct</td>
+        </tr>
+        <tr class="top-aligned-row">
+            <td><strong>In:</strong></td>
+            <td>
+                <a href="../files/lib/cstruct/win32struct_rb.html">
+                lib/cstruct/win32struct.rb
+                </a>
+        <br />
+            </td>
+        </tr>
+
+        <tr class="top-aligned-row">
+            <td><strong>Parent:</strong></td>
+            <td>
+                <a href="CStruct.html">
+                CStruct
+               </a>
+            </td>
+        </tr>
+        </table>
+    </div>
+  <!-- banner header -->
+
+  <div id="bodyContent">
+
+
+
+  <div id="contextContent">
+
+    <div id="description">
+      <h3>Description</h3>
+<p>
+<a href="Win32Struct.html">Win32Struct</a> defined some Win32 type,like as:
+HANDLE,HMODULE,&#8230;
+</p>
+<h3>How to use</h3>
+<pre>
+  require 'cstruct/win32struct
+</pre>
+
+    </div>
+
+
+   </div>
+
+
+  </div>
+
+
+    <!-- if includes -->
+
+    <div id="section">
+
+
+
+    <div id="aliases-list">
+      <h3 class="section-bar">External Aliases</h3>
+
+      <div class="name-list">
+                        <table summary="aliases">
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">uint32</td>
+          <td>-&gt;</td>
+          <td class="context-item-value">HANDLE</td>
+        </tr>
+      <tr class="top-aligned-row context-row">
+        <td>&nbsp;</td>
+        <td colspan="2" class="context-item-desc">
+Handle
+
+</td>
+      </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">uint32</td>
+          <td>-&gt;</td>
+          <td class="context-item-value">HMODULE</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">uint32</td>
+          <td>-&gt;</td>
+          <td class="context-item-value">HINSTANCE</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">uint32</td>
+          <td>-&gt;</td>
+          <td class="context-item-value">HRGN</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">uint32</td>
+          <td>-&gt;</td>
+          <td class="context-item-value">HTASK</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">uint32</td>
+          <td>-&gt;</td>
+          <td class="context-item-value">HKEY</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">uint32</td>
+          <td>-&gt;</td>
+          <td class="context-item-value">HDESK</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">uint32</td>
+          <td>-&gt;</td>
+          <td class="context-item-value">HMF</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">uint32</td>
+          <td>-&gt;</td>
+          <td class="context-item-value">HEMF</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">uint32</td>
+          <td>-&gt;</td>
+          <td class="context-item-value">HRSRC</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">uint32</td>
+          <td>-&gt;</td>
+          <td class="context-item-value">HSTR</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">uint32</td>
+          <td>-&gt;</td>
+          <td class="context-item-value">HWINSTA</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">uint32</td>
+          <td>-&gt;</td>
+          <td class="context-item-value">HKL</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">uint32</td>
+          <td>-&gt;</td>
+          <td class="context-item-value">HGDIOBJ</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">uint32</td>
+          <td>-&gt;</td>
+          <td class="context-item-value">HICON</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">uint32</td>
+          <td>-&gt;</td>
+          <td class="context-item-value">HPEN</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">uint32</td>
+          <td>-&gt;</td>
+          <td class="context-item-value">HACCEL</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">uint32</td>
+          <td>-&gt;</td>
+          <td class="context-item-value">HBITMAP</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">uint32</td>
+          <td>-&gt;</td>
+          <td class="context-item-value">HBRUSH</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">uint32</td>
+          <td>-&gt;</td>
+          <td class="context-item-value">HCOLORSPACE</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">uint32</td>
+          <td>-&gt;</td>
+          <td class="context-item-value">HDC</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">uint32</td>
+          <td>-&gt;</td>
+          <td class="context-item-value">HGLRC</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">uint32</td>
+          <td>-&gt;</td>
+          <td class="context-item-value">HENHMETAFILE</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">uint32</td>
+          <td>-&gt;</td>
+          <td class="context-item-value">HFONT</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">uint32</td>
+          <td>-&gt;</td>
+          <td class="context-item-value">HMENU</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">uint32</td>
+          <td>-&gt;</td>
+          <td class="context-item-value">HMETAFILE</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">uint32</td>
+          <td>-&gt;</td>
+          <td class="context-item-value">HPALETTE</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">uint32</td>
+          <td>-&gt;</td>
+          <td class="context-item-value">HCURSOR</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">uint32</td>
+          <td>-&gt;</td>
+          <td class="context-item-value">WPARAM</td>
+        </tr>
+      <tr class="top-aligned-row context-row">
+        <td>&nbsp;</td>
+        <td colspan="2" class="context-item-desc">
+Data Type
+
+</td>
+      </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">uint32</td>
+          <td>-&gt;</td>
+          <td class="context-item-value">LPARAM</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">uint32</td>
+          <td>-&gt;</td>
+          <td class="context-item-value">LRESULT</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">uint32</td>
+          <td>-&gt;</td>
+          <td class="context-item-value">ATOM</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">uint32</td>
+          <td>-&gt;</td>
+          <td class="context-item-value">BOOL</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">uint32</td>
+          <td>-&gt;</td>
+          <td class="context-item-value">DWORD</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">uint16</td>
+          <td>-&gt;</td>
+          <td class="context-item-value">WORD</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">uint8</td>
+          <td>-&gt;</td>
+          <td class="context-item-value">BYTE</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">uint32</td>
+          <td>-&gt;</td>
+          <td class="context-item-value">ULONG</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">uint32</td>
+          <td>-&gt;</td>
+          <td class="context-item-value">UINT</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">uint16</td>
+          <td>-&gt;</td>
+          <td class="context-item-value">USHORT</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">uchar</td>
+          <td>-&gt;</td>
+          <td class="context-item-value">UCHAR</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">int32</td>
+          <td>-&gt;</td>
+          <td class="context-item-value">LONG</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">int32</td>
+          <td>-&gt;</td>
+          <td class="context-item-value">INT</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">int16</td>
+          <td>-&gt;</td>
+          <td class="context-item-value">SHORT</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">char</td>
+          <td>-&gt;</td>
+          <td class="context-item-value">CHAR</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">uint16</td>
+          <td>-&gt;</td>
+          <td class="context-item-value">WCHAR</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">uint32</td>
+          <td>-&gt;</td>
+          <td class="context-item-value">DWORD_PTR</td>
+        </tr>
+      <tr class="top-aligned-row context-row">
+        <td>&nbsp;</td>
+        <td colspan="2" class="context-item-desc">
+Pointer
+
+</td>
+      </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">uint32</td>
+          <td>-&gt;</td>
+          <td class="context-item-value">ULONG_PTR</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">uint32</td>
+          <td>-&gt;</td>
+          <td class="context-item-value">UINT_PTR</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">uint32</td>
+          <td>-&gt;</td>
+          <td class="context-item-value">PHANDLE</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">uint32</td>
+          <td>-&gt;</td>
+          <td class="context-item-value">PBOOL</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">uint32</td>
+          <td>-&gt;</td>
+          <td class="context-item-value">LPBOOL</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">uint32</td>
+          <td>-&gt;</td>
+          <td class="context-item-value">PBYTE</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">uint32</td>
+          <td>-&gt;</td>
+          <td class="context-item-value">LPBYTE</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">uint32</td>
+          <td>-&gt;</td>
+          <td class="context-item-value">PINT</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">uint32</td>
+          <td>-&gt;</td>
+          <td class="context-item-value">LPINT</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">uint32</td>
+          <td>-&gt;</td>
+          <td class="context-item-value">PWORD</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">uint32</td>
+          <td>-&gt;</td>
+          <td class="context-item-value">LPWORD</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">uint32</td>
+          <td>-&gt;</td>
+          <td class="context-item-value">LPLONG</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">uint32</td>
+          <td>-&gt;</td>
+          <td class="context-item-value">PDWORD</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">uint32</td>
+          <td>-&gt;</td>
+          <td class="context-item-value">LPDWORD</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">uint32</td>
+          <td>-&gt;</td>
+          <td class="context-item-value">LPVOID</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">uint32</td>
+          <td>-&gt;</td>
+          <td class="context-item-value">LPCVOID</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">uint32</td>
+          <td>-&gt;</td>
+          <td class="context-item-value">LPCSTR</td>
+        </tr>
+                        </table>
+      </div>
+    </div>
+
+
+      
+
+
+    <!-- if method_list -->
+
+
+  </div>
+
+
+<div id="validator-badges">
+  <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+</div>
+
+</body>
+</html>
